@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zNcj9GGiBz9y87KGj/fNsTONTdazMNgu9XBPez5nkEgA/kOvRCzZlryHjIKnS344gXMn4QlGYFJLW4JAGjkkaw==",
+  "dgSpecHash": "PrGaObFdoMRdZHPEFaQihtUM/3/fmFQ7/JkCKInZnGFLLL01CA00YLtgOGbYLDq+Grtf5x11gRCh3FOkF3I6Kw==",
   "success": true,
-  "projectFilePath": "D:\\Invoice\\Invoice.csproj",
+  "projectFilePath": "D:\\Invoice Git\\API\\Invoice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stark Solutions\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Stark Solutions\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

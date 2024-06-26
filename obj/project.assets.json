@@ -3441,11 +3441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Invoice\\Invoice.csproj",
+      "projectUniqueName": "D:\\Invoice Git\\API\\Invoice.csproj",
       "projectName": "Invoice",
-      "projectPath": "D:\\Invoice\\Invoice.csproj",
+      "projectPath": "D:\\Invoice Git\\API\\Invoice.csproj",
       "packagesPath": "C:\\Users\\Stark Solutions\\.nuget\\packages\\",
-      "outputPath": "D:\\Invoice\\obj\\",
+      "outputPath": "D:\\Invoice Git\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
