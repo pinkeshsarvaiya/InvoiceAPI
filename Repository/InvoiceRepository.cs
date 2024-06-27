@@ -33,7 +33,7 @@ namespace Invoice.Repository
         public async Task<InvoiceModel> GetinvoiceById(int InvoiceID)
         {
             var param = new DynamicParameters();
-            param.Add("@Mode", "GetInvoice");
+            param.Add("@Mode", "GetInvoiceById");
             param.Add("@InvoiceID", InvoiceID);
             using (var connection = _context.Database.GetDbConnection())
 
