@@ -2,34 +2,46 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/ManargerAPI/bin/Debug/net6.0
-/.vs/ManargerAPI/FileContentIndex
-/ManargerAPI/obj
-/ManargerAPI.Common/bin/Debug/net6.0
-/ManargerAPI.Common/obj
-/ManargerAPI.Data/bin/Debug/net6.0
-/ManargerAPI.Data/obj
-/ManargerAPI.Model/bin/Debug/net6.0
-/ManargerAPI.Model/obj
-/.vs/ManargerAPI/v17
-.vs/
-/.vs/
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
 
-.vs/
-/ManargerAPI/.vs
-/ManargerAPI/bin/Release/net6.0
-/ManargerAPI/Properties/PublishProfiles
-/ManargerAPI/ManargerAPI.csproj.user
-/ManargerAPI.Common/bin/Release/net6.0
-/ManargerAPI.Data/bin/Release/net6.0
-/ManargerAPI.Model/bin/Release/net6.0
-/ManargerAPI/bin
-/ManargerAPI/obj
-/ManargerAPI.Common/bin/
-/ManargerAPI.Model/bin
+# Visual Studio Code
+.vscode/
 
-/ManargerAPI/bin/Release/net6.0
-/ManargerAPI/Properties/PublishProfiles
-/ManargerAPI.Common/bin/Release/net6.0
-/ManargerAPI.Data/bin/Release/net6.0
-/ManargerAPI.Model/bin/Release/net6.0
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Fleet
+.fleet/
+
+# Code Rush
+.cr/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
