@@ -58,6 +58,7 @@ namespace Invoice.Repository
 
                 }
                 param.Add("@InvoiceID", model.InvoiceID);
+                param.Add("@InvoiceNumber", model.InvoiceNumber);
                 param.Add("@To_Name", model.To_Name);
                 param.Add("@To_MobileNumber", model.To_MobileNumber);
                 param.Add("@To_GSTIN_UIN", model.To_GSTIN_UIN);
@@ -70,10 +71,13 @@ namespace Invoice.Repository
                 param.Add("@Qty", model.Qty);
                 param.Add("@Price", model.Price);
                 param.Add("@Total", model.Total);
+                param.Add("@CGST_Per", model.CGST_Per);
                 param.Add("@CGST_Amount", model.CGST_Amount);
+                param.Add("@SGST_Per", model.SGST_Per);
                 param.Add("@SGST_Amount", model.SGST_Amount);
                 param.Add("@Description", model.Description);
                 param.Add("@TaxableAmount", model.TaxableAmount);
+                param.Add("@InvoiceDate", model.InvoiceDate.UtcDateTime);
                 var result = await _context.Database.GetDbConnection().QueryFirstOrDefaultAsync<GeneralModel>("SP_Invoice", param, commandType: CommandType.StoredProcedure);
                 return result;
             }

@@ -6,6 +6,8 @@ namespace Invoice.Model
     {
         [Key]
         public int InvoiceID { get; set; }
+        public string InvoiceNumber { get; set; }
+
         public string To_Name { get; set;}
         public string To_MobileNumber { get; set;}
         public string To_MSME_NO { get; set;}
@@ -19,10 +21,15 @@ namespace Invoice.Model
         public int Qty { get; set;}
         public int Price { get; set;}
         public decimal Total { get; set;}
+        public decimal CGST_Per { get; set; }
         public decimal CGST_Amount { get; set;}
+        public decimal SGST_Per { get; set; }
         public decimal SGST_Amount { get; set;}
+
         public decimal TaxableAmount { get; set;}
         public bool PaidByCustomer { get; set;}
+        public DateTimeOffset InvoiceDate { get; set; }
+
         public DateTime CreatedDate { get; set; }
     }
 }
