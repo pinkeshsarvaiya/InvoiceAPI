@@ -25,11 +25,11 @@ namespace Invoice.Model
         public decimal CGST_Amount { get; set;}
         public decimal SGST_Per { get; set; }
         public decimal SGST_Amount { get; set;}
-
         public decimal TaxableAmount { get; set;}
+        public decimal TDS_Per { get; set; }
+        public decimal TDS_Amount { get; set; }
         public bool PaidByCustomer { get; set;}
-        public DateTimeOffset InvoiceDate { get; set; }
-
+        public DateTime InvoiceDate { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }

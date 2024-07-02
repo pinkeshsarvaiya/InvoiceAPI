@@ -77,7 +77,9 @@ namespace Invoice.Repository
                 param.Add("@SGST_Amount", model.SGST_Amount);
                 param.Add("@Description", model.Description);
                 param.Add("@TaxableAmount", model.TaxableAmount);
-                param.Add("@InvoiceDate", model.InvoiceDate.UtcDateTime);
+                param.Add("@InvoiceDate", model.InvoiceDate);
+                param.Add("@TDS_Per", model.TDS_Per);
+                param.Add("@TDS_Amount", model.TDS_Amount);
                 var result = await _context.Database.GetDbConnection().QueryFirstOrDefaultAsync<GeneralModel>("SP_Invoice", param, commandType: CommandType.StoredProcedure);
                 return result;
             }
