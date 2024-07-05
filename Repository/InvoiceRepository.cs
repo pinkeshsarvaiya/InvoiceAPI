@@ -77,7 +77,7 @@ namespace Invoice.Repository
                 param.Add("@SGST_Amount", model.SGST_Amount);
                 param.Add("@Description", model.Description);
                 param.Add("@TaxableAmount", model.TaxableAmount);
-                param.Add("@InvoiceDate", model.InvoiceDate);
+                param.Add("@InvoiceDate", model.InvoiceDate.ToUniversalTime());
                 param.Add("@TDS_Per", model.TDS_Per);
                 param.Add("@TDS_Amount", model.TDS_Amount);
                 var result = await _context.Database.GetDbConnection().QueryFirstOrDefaultAsync<GeneralModel>("SP_Invoice", param, commandType: CommandType.StoredProcedure);
@@ -90,7 +90,7 @@ namespace Invoice.Repository
             }
         }
 
-        public async Task<GeneralModel> DeleteInvoice(int InvoiceID)
+        public async Task<bool> DeleteInvoice(int InvoiceID)
         {
             try
             {
@@ -98,7 +98,7 @@ namespace Invoice.Repository
                 param.Add("@Mode", "DeleteInvoice");
                 param.Add("@InvoiceID", InvoiceID );
                 var result = await _context.Database.GetDbConnection().QueryFirstOrDefaultAsync<GeneralModel>("SP_Invoice", param, commandType: CommandType.StoredProcedure);
-                return result;
+                return true;
             }
             catch (Exception)
             {

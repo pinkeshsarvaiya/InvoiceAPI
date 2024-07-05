@@ -7,7 +7,7 @@ namespace Invoice.Repository
         public Task<List<InvoiceModel>> Getinvoice();
         public Task<InvoiceModel> GetinvoiceById(int InvoiceID);
         public Task<GeneralModel> AddUpdateInvoice(InvoiceModel model);
-        public Task<GeneralModel> DeleteInvoice(int InvoiceID);
+        public Task<bool> DeleteInvoice(int InvoiceID);
 
 
     }
